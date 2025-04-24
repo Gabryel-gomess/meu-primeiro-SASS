@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Times New Roman", Times, Arial, Helvetica, sans-serif;
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 5rem;
+  color: black;
+}
+
+p {
+  color: cadetblue;
+}
+
+/*# sourceMappingURL=style.css.map */

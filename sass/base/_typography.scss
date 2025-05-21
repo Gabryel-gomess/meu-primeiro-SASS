@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
   font-family: "Monserrat", sans-serif;
   font-size: 1.6rem;
@@ -5,3 +6,18 @@ body{
   color: $cor-preta;
 
 }
+=======
+@use '../abstracts/helpers' as *;
+
+
+body{
+  font-family: 'Monserrat', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $cor-preta;
+}
+
+b, strong{
+  font-weight: 600;
+}
+>>>>>>> 2f144f59dfcf7b8b482fd09d0d5434be01e93591

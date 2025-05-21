@@ -1,3 +1,32 @@
+<<<<<<< HEAD
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+=======
+@use '../abstracts/helpers' as *;
+
+.botao{
+    border-radius: 5rem;
+    padding: 1rem 2.5rem ;
+    cursor: pointer;
+    border: solid 2px #000;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.92rem;
+
+    &:hover{
+           border-width: 3px;
+            
+        }
+
+    &--amarelo{
+        background-color: $cor-amarelo;
+        border-color: darken($cor-amarelo, 30%);
+        color: #fff;
+
+        
+    }
+}
+>>>>>>> 2f144f59dfcf7b8b482fd09d0d5434be01e93591

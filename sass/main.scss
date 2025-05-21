@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
 
 @import"abstracts/helpers";
 
@@ -14,4 +15,22 @@
 @import 'components/button', 'components/caixa';
 // 5. Pages
 @import 'pages/inscricao';
+=======
+// 1. Abstracts
+@use 'abstracts/helpers';
+
+// 2. Base stuff
+@use 'base/base';
+@use 'base/typography';
+
+// 3. Layout-related sections
+@use 'layout/layout';
+
+// 4. Components
+@use 'components/button';
+@use 'components/caixa';
+
+// 5. Pages
+@use 'pages/inscricao';
+>>>>>>> 2f144f59dfcf7b8b482fd09d0d5434be01e93591
 

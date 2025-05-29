@@ -11,16 +11,18 @@
     font-weight: 700;
     font-size: 1.92rem;
 
-    &:hover{
+    &:hover {
            border-width: 3px;
             
         }
 
-    &--amarelo{
+    &--amarelo {
         background-color: $cor-amarelo;
         border-color: darken($cor-amarelo, 30%);
         color: #fff;
+    }
 
-        
+    &--centralizado {
+        align-self: center;
     }
 }

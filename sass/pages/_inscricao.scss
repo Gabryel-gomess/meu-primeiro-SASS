@@ -7,14 +7,13 @@
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-
     padding-bottom: 0;
 }
 
 &--disclaimer{
     padding: 3.12rem 2rem;
     background-color: $cor-cinza;
-    box-shadow: 0 0.5rem 1rem -0.2rem rgba(black, 0.2);
+    box-shadow: 0 0.5rem 1rem -0.2rem rgba(#000000, 0.2);
 }
 
 }
@@ -23,11 +22,29 @@
 
     &--hero{
     position: relative;
-    align-items: end;
+    align-items: flex-end;
     width: 100%;
 }
-
+    &--passo, 
+    &--aprender{
+        @include flex($direction: column, $gap: 6rem, $align: start);
+    }
 }
+
+.grid {
+  &--passo{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+    column-gap: 3rem;
+  }
+
+  &--aprender{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  }
+
 
 .div-lira{
     position: absolute;
@@ -40,6 +57,25 @@
 
 .disclaimer__paragrafo{
     font-size: 1.33rem;
+}
 
+.img-lira {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+.cabecalho-titulo {
+    @include flex($align: center, $gap: 1.6rem);
+}
+
+.aprender-img{
+    border-radius: 2rem;
+    transition: transform ease 200ms;
+
+    &:hover {
+
+        transform: scale(1.05);
+    }
 }
 

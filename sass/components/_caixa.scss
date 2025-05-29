@@ -26,21 +26,19 @@
         box-shadow: inset 0 0 .8rem rgba(black, 0.2);
     }
 
-
+    
     &__titulos {
         @include flex($direction: column, $align: center, $gap: 0.65rem);
     }
 
     &__h1{
-        font-size: 4.88rem;
-        line-height:1; 
+         @extend %titulo;
         color: $cor-azul-escuro;
         text-align: center;
     }
 
     &__subtitulo{
-        font-size: 2.76rem;
-        font-weight: 700;
+        @extend %subtitulo;
 
         &--cinza {
             color: $cor-cinza-escuro;
@@ -48,7 +46,6 @@
     }
 
     
-
     &__lista{
         list-style: none;
         font-size: 1.92rem;
